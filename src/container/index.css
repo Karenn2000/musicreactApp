@@ -1,0 +1,26 @@
+/* Table.css */
+  .table {
+    width: 70%; 
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+    position: relative;
+    left: 15%;
+  }
+  
+  .table th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .table th:last-child, .table td:last-child {
+    text-align: center;
+  }
+  

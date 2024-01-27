@@ -1,13 +1,29 @@
-.nav{
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 3px;
-  margin: 20px auto; 
-  width: 70%;
-  background: rgb(214, 211, 211);
+  margin: 20px auto;
+  width: 70% !important;
+  background: rgba(240, 237, 237, 0.754);
   border-radius: 6px;
   margin-bottom: 20px;
   border: 1px solid #b2b5b9;
   position: relative;
 }
+
+@media only screen and (max-width: 1800px) {
+  .nav {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    width: 90%;
+  }
+}
+
 .btn{
   border-radius: 4px 0 0 4px;
   margin: 3px;
@@ -18,7 +34,7 @@
   font-size: 15px;
   border: 1px solid #b2b5b9;
 } .btn:hover {
-  background:#0056b3;
+  background:#d4d5d5;
   transition: background-color 0.3s ease;
 }
 .btn2{
@@ -31,7 +47,7 @@
   font-size: 15px;
   border: 1px solid #b2b5b9;
 } .btn2:hover {
-  background:#0056b3;
+  background:#d4d5d5;
   transition: background-color 0.3s ease;
 }
 
@@ -62,7 +78,7 @@
   margin: 3px 20px 3px -3px;
   padding: 3px;
 } .open:hover {
-  background-color: #0056b3;
+  background-color: #d4d5d5;
 }
 
 .open2{
@@ -79,7 +95,7 @@
   margin: 3px 20px 3px -3px;
   padding: 3px;
 } .open2:hover{
-  background:#0056b3;
+  background:#d4d5d5;
   transition: background-color 0.3s ease;
 }
 
@@ -97,7 +113,7 @@
   transition: border-color 0.3s ease;
   border-radius: 14px;
 }.search:hover {
-  background-color: #b2b5b9;
+  background-color:#d4d5d5;
 }
 
 .btn_num{
@@ -118,6 +134,31 @@ position: absolute;
 top: 3px;
 } 
 
+@media (max-width: 768px) {
+  .nav {
+    width: 90%;
+  }
+
+  .search {
+    width: auto;
+  }
+}
 
 
 
+
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container button {
+  margin-right: 6px; /* Adjust the margin as needed */
+}
+
+
+.searchContainer{
+  position: relative;
+  left: 58%;
+}
